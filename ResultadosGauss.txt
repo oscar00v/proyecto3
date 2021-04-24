@@ -1,0 +1,183 @@
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: ./checkpoints                 
+                crop_size: 256                           
+             dataset_mode: iharmony4                     	[default: aligned]
+             dataset_root: /content/Hday2nightclean/real_images_modificadas/Hday2nightGauss/	[default: <path to iHarmony4 dataset>]
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: latest                        
+                     eval: False                         
+                  gpu_ids: 0                             
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 4                             
+                  isTrain: False                         	[default: None]
+                 is_train: True                          
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+         max_dataset_size: inf                           
+                    model: dovenet                       	[default: test]
+               n_layers_D: 3                             
+                     name: experiment_name_pretrain      	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: s2ad                          	[default: unet_256]
+       new_dataset_option: 2.0                           
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: True                          	[default: False]
+                     norm: batch                         
+                    ntest: inf                           
+                 num_test: 7404                          
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: ./results/                    
+           serial_batches: False                         
+                   suffix:                               
+                  verbose: False                         
+----------------- End -------------------
+loading test file
+dataset [Iharmony4Dataset] was created
+initialize network with normal
+model [DoveNetModel] was created
+loading the model from ./checkpoints/experiment_name_pretrain/latest_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.760 M
+-----------------------------------------------
+d1048-20120628-200951_1_3.jpg | mse 1294.80 | psnr 16.00
+d1048-20120628-200951_1_1.jpg | mse 1293.28 | psnr 16.00
+d1048-20120628-200951_1_2.jpg | mse 1293.12 | psnr 16.00
+d18726-20120509-195331_1_2.jpg | mse 941.00 | psnr 17.42
+d18726-20120509-195331_1_1.jpg | mse 942.07 | psnr 17.42
+d18726-20120509-195331_1_3.jpg | mse 936.91 | psnr 17.44
+d18726-20120509-195331_1_4.jpg | mse 933.35 | psnr 17.46
+d18726-20120509-195331_1_5.jpg | mse 948.37 | psnr 17.39
+d18726-20120509-195331_1_6.jpg | mse 932.85 | psnr 17.46
+d18726-20120509-195331_1_7.jpg | mse 927.27 | psnr 17.49
+d18997-17_1_1.jpg | mse 7127.65 | psnr 9.60
+d18997-17_1_2.jpg | mse 7117.37 | psnr 9.61
+d18997-17_1_3.jpg | mse 7120.79 | psnr 9.61
+d18997-17_1_4.jpg | mse 7121.37 | psnr 9.61
+d18997-17_1_5.jpg | mse 7123.09 | psnr 9.60
+d18962-20121004-021509_1_3.jpg | mse 829.34 | psnr 18.88
+d18962-20121004-021509_1_1.jpg | mse 837.79 | psnr 18.83
+d18962-20121004-021509_1_2.jpg | mse 843.08 | psnr 18.80
+d18962-20121004-021509_1_4.jpg | mse 843.07 | psnr 18.80
+d18897-20120428-164138_1_2.jpg | mse 1022.78 | psnr 17.47
+d18897-20120428-164138_1_1.jpg | mse 1008.72 | psnr 17.57
+d18071-20120319-003852_1_3.jpg | mse 1092.86 | psnr 16.85
+d18071-20120319-003852_1_1.jpg | mse 1093.88 | psnr 16.84
+d18071-20120319-003852_1_2.jpg | mse 1094.04 | psnr 16.84
+d18071-20120319-003852_1_4.jpg | mse 1091.11 | psnr 16.97
+d18071-20120319-003852_1_5.jpg | mse 1092.26 | psnr 16.85
+d90000004-18_1_1.jpg | mse 912.07 | psnr 18.39
+d90000004-18_1_2.jpg | mse 908.31 | psnr 18.41
+d90000004-18_1_3.jpg | mse 911.99 | psnr 18.39
+d441-139_1_3.jpg | mse 1495.30 | psnr 15.78
+d441-139_1_1.jpg | mse 1496.97 | psnr 15.78
+d441-139_1_2.jpg | mse 1496.55 | psnr 15.78
+d441-139_1_4.jpg | mse 1503.31 | psnr 15.76
+d441-139_1_5.jpg | mse 1500.75 | psnr 15.77
+d18478-20120526-021926_1_3.jpg | mse 1194.86 | psnr 17.36
+d18478-20120526-021926_1_1.jpg | mse 1197.29 | psnr 17.35
+d18478-20120526-021926_1_2.jpg | mse 1201.84 | psnr 17.33
+d23947-20121230-222714_1_5.jpg | mse 781.21 | psnr 18.46
+d23947-20121230-222714_1_1.jpg | mse 770.80 | psnr 18.51
+d23947-20121230-222714_1_2.jpg | mse 771.42 | psnr 18.51
+d23947-20121230-222714_1_3.jpg | mse 777.72 | psnr 18.48
+d23947-20121230-222714_1_4.jpg | mse 776.00 | psnr 18.49
+d23947-20121230-222714_1_6.jpg | mse 781.05 | psnr 18.46
+d90000004-27_1_1.jpg | mse 736.18 | psnr 19.29
+d90000004-27_1_2.jpg | mse 736.67 | psnr 19.29
+d90000004-27_1_3.jpg | mse 742.79 | psnr 19.25
+d90000004-27_1_4.jpg | mse 738.64 | psnr 19.27
+d90000004-27_1_5.jpg | mse 738.09 | psnr 19.28
+d90000004-27_1_6.jpg | mse 738.69 | psnr 19.27
+d18963-20120924-234609_1_1.jpg | mse 1040.07 | psnr 17.86
+d18963-20120924-234609_1_2.jpg | mse 1039.93 | psnr 17.86
+d18963-20120924-234609_1_3.jpg | mse 1036.77 | psnr 17.87
+d90000012-181_1_13.jpg | mse 987.02 | psnr 18.15
+d90000012-181_1_1.jpg | mse 1007.22 | psnr 18.07
+d90000012-181_1_10.jpg | mse 989.93 | psnr 18.14
+d90000012-181_1_11.jpg | mse 996.89 | psnr 18.11
+d90000012-181_1_12.jpg | mse 989.06 | psnr 18.14
+d90000012-181_1_14.jpg | mse 1000.75 | psnr 18.09
+d90000012-181_1_2.jpg | mse 989.63 | psnr 18.14
+d90000012-181_1_3.jpg | mse 990.00 | psnr 18.14
+d90000012-181_1_4.jpg | mse 992.84 | psnr 18.13
+d90000012-181_1_5.jpg | mse 993.58 | psnr 18.12
+d90000012-181_1_6.jpg | mse 990.74 | psnr 18.14
+d90000012-181_1_7.jpg | mse 994.69 | psnr 18.12
+d90000012-181_1_8.jpg | mse 1007.47 | psnr 18.06
+d90000012-181_1_9.jpg | mse 996.80 | psnr 18.11
+d9483-20110522-142401_1_2.jpg | mse 875.71 | psnr 18.60
+d9483-20110522-142401_1_1.jpg | mse 875.62 | psnr 18.60
+d9483-20110522-142401_1_3.jpg | mse 875.23 | psnr 18.61
+d9483-20110522-142401_1_4.jpg | mse 876.53 | psnr 18.60
+d23945-20121222-150700_1_2.jpg | mse 778.40 | psnr 18.44
+d23945-20121222-150700_1_1.jpg | mse 790.71 | psnr 18.37
+d23945-20121222-150700_1_3.jpg | mse 776.92 | psnr 18.44
+d23945-20121222-150700_1_4.jpg | mse 777.64 | psnr 18.44
+d23945-20121222-150700_1_5.jpg | mse 785.23 | psnr 18.40
+d23945-20121222-150700_1_6.jpg | mse 777.01 | psnr 18.44
+d18118-20120819-022534_1_3.jpg | mse 765.43 | psnr 16.92
+d18118-20120819-022534_1_1.jpg | mse 766.93 | psnr 16.91
+d18118-20120819-022534_1_2.jpg | mse 764.86 | psnr 16.92
+d18118-20120819-022534_1_4.jpg | mse 764.90 | psnr 16.92
+d90000014-10_1_2.jpg | mse 1191.09 | psnr 16.84
+d90000014-10_1_9.jpg | mse 1186.70 | psnr 16.82
+d90000014-10_1_5.jpg | mse 1154.48 | psnr 17.23
+d18959-20120615-084228_1_1.jpg | mse 2373.83 | psnr 14.27
+d90000014-10_1_6.jpg | mse 1094.63 | psnr 17.14
+d573-56_1_13.jpg | mse 2084.63 | psnr 14.04
+d573-56_1_3.jpg | mse 2096.45 | psnr 14.02
+d573-56_1_12.jpg | mse 2083.60 | psnr 14.05
+d90000014-10_1_7.jpg | mse 1006.77 | psnr 17.24
+d573-56_1_4.jpg | mse 2075.32 | psnr 14.06
+d8915-20110321-090528_1_3.jpg | mse 997.36 | psnr 17.21
+d8915-20110321-090528_1_4.jpg | mse 1001.58 | psnr 17.15
+d573-56_1_10.jpg | mse 2112.71 | psnr 13.99
+d7371-20110407-074714_1_5.jpg | mse 1648.92 | psnr 15.89
+d573-56_1_5.jpg | mse 2115.33 | psnr 13.98
+d90000014-10_1_13.jpg | mse 1106.66 | psnr 16.72
+d90000014-10_1_11.jpg | mse 1012.20 | psnr 17.07
+d90000014-10_1_8.jpg | mse 1030.99 | psnr 17.21
+d260-77_1_3.jpg | mse 2008.91 | psnr 14.65
+d90000014-10_1_1.jpg | mse 987.87 | psnr 17.21
+d18959-20120615-084228_1_6.jpg | mse 2354.71 | psnr 14.31
+d8915-20110321-090528_1_1.jpg | mse 974.90 | psnr 17.31
+d8915-20110321-090528_1_2.jpg | mse 981.91 | psnr 17.28
+d8915-20110321-090528_1_6.jpg | mse 975.09 | psnr 17.23
+d573-56_1_2.jpg | mse 2092.84 | psnr 14.03
+d573-56_1_6.jpg | mse 2081.56 | psnr 14.05
+d573-56_1_11.jpg | mse 2074.55 | psnr 14.10
+d17664-20120114-145839_1_8.jpg | mse 1613.11 | psnr 15.78
+d17664-20120114-145839_1_3.jpg | mse 1493.24 | psnr 16.11
+d17664-20120114-145839_1_4.jpg | mse 1600.07 | psnr 15.81
+d17664-20120114-145839_1_12.jpg | mse 1548.73 | psnr 15.99
+d17664-20120114-145839_1_18.jpg | mse 1555.78 | psnr 15.97
+d17664-20120114-145839_1_13.jpg | mse 1571.79 | psnr 15.96
+d17664-20120114-145839_1_6.jpg | mse 1978.09 | psnr 15.03
+d17664-20120114-145839_1_22.jpg | mse 1723.78 | psnr 15.63
+d17664-20120114-145839_1_2.jpg | mse 1997.55 | psnr 14.92
+d17664-20120114-145839_1_9.jpg | mse 1890.52 | psnr 15.12
+d17664-20120114-145839_1_21.jpg | mse 1914.29 | psnr 15.10
+d90000002-24_1_13.jpg | mse 1774.94 | psnr 14.74
+d17664-20120114-145839_1_17.jpg | mse 1959.90 | psnr 15.00
+d17664-20120114-145839_1_5.jpg | mse 1641.09 | psnr 15.77
+d90000002-24_1_9.jpg | mse 1777.94 | psnr 14.74
+d90000002-24_1_3.jpg | mse 1751.92 | psnr 14.80
+d90000002-24_1_23.jpg | mse 1801.55 | psnr 14.68
+d90000002-24_1_18.jpg | mse 1781.28 | psnr 14.73
+d90000002-24_1_2.jpg | mse 1809.71 | psnr 14.66
+d90000002-24_1_24.jpg | mse 1771.88 | psnr 14.75
+d90000002-24_1_14.jpg | mse 1757.06 | psnr 14.79
+d90000002-24_1_5.jpg | mse 1796.93 | psnr 14.69
+d17664-20120114-145839_1_16.jpg | mse 1931.02 | psnr 15.10
+d90000002-24_1_25.jpg | mse 1795.62 | psnr 14.69
+d90000002-24_1_19.jpg | mse 1757.42 | psnr 14.79
+d90000002-24_1_26.jpg | mse 1750.27 | psnr 14.80
