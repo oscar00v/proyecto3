@@ -16,6 +16,8 @@ from skimage.measure import compare_mse as mse
 from skimage.measure import compare_psnr as psnr
 
 if __name__ == '__main__':
+    results1 = open('Resultsmse.txt','w+')
+    results2 = open('Resultspsnr.txt','w+')
     opt = TestOptions().parse()  # get test options
     # hard-code some parameters for test
     opt.num_threads = 0   # test code only supports num_threads = 1
@@ -58,5 +60,9 @@ if __name__ == '__main__':
         mse_score_op = mse(output,real)
         psnr_score_op = psnr(real,output,data_range=output.max() - output.min())
         print('%s | mse %0.2f | psnr %0.2f' % (image_name,mse_score_op,psnr_score_op))
-
+        results1.write(str(mse_score_op) + ',' )
+        results2.write(str(psnr_score_op) + ',' )
+    results1.close()
+    results2.close()
     webpage.save()  # save the HTML
+    
